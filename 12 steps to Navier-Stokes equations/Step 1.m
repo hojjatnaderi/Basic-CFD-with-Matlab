@@ -10,7 +10,7 @@ c=1;
 x=(0:dx:2);
 %Setting up the the initial condition
 u=ones(1,nx);%u_zero
-%below loop is same as: u(int64(.5/dx):int64(1/dx+1))=2;
+%Below loop is same as: u(int64(.5/dx):int64(1/dx+1))=2;
 for i=1:nx
     if (0.5<=x(i)) && (x(i)<=1)
         u(i)=2;
