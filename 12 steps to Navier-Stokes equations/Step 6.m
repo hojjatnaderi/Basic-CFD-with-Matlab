@@ -36,7 +36,7 @@ for n=1:nt
     v(2:end,2:end)=vn(2:end,2:end)-un(2:end,2:end)*(dt/dx).*(vn(2:end,2:end)-vn(2:end,1:end-1))...
         -vn(2:end,2:end)*(dt/dy).*(vn(2:end,2:end)-vn(1:end-1,2:end));
     
-    %below equations aren't needed becasue of u,v=ones(ny,nx);
+    %below equations (boundary conditions) aren't needed becasue of u,v=ones(ny,nx);
     %u(1,:)=1;
     %u(end,:)=1;
     %u(:,1)=1;
@@ -69,7 +69,8 @@ toc
 %            
 %            v(j,i)=vn(j,i)-un(j,i)*(dt/dx)*(vn(j,i)-vn(j,i-1))...
 %                -vn(j,i)*(dt/dy)*(vn(j,i)-vn(j-1,i));
-%            
+%
+%             %Boundary conditions:      
 %             u(1,:)=1;
 %             u(end,:)=1;
 %             u(:,1)=1;
