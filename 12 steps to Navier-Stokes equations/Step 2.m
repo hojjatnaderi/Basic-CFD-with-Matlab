@@ -14,7 +14,7 @@ u_zero=u;
 x=(0:dx:2);
 %plot(x,u_zero)
 %hold on
-%defining un parameter
+%Defining un parameter
 un=ones(1,nx);
 %Iterating
  for n=1:nt
