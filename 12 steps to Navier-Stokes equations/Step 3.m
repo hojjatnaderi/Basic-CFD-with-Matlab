@@ -1,3 +1,4 @@
+%Step 3: Diffusion Equation in 1-D
 clc
 close all
 clear
