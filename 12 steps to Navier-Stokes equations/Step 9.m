@@ -26,7 +26,8 @@ while l1norm>l1norm_target
     p(2:end-1,2:end-1)=((dy^2)*(pn(2:end-1,3:end)+pn(2:end-1,1:end-2))+...
         (dx^2)*(pn(3:end,2:end-1)+pn(1:end-2,2:end-1)))...
         /(2*(dx^2+dy^2));
-
+        
+    %Boundary conditions:
     p(:,1)=0;
     p(:,end)=y;
     p(1,:)=p(2,:);
