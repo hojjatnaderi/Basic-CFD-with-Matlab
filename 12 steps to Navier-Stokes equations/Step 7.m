@@ -27,7 +27,8 @@ for n=1:nt
     u(2:end-1,2:end-1)=un(2:end-1,2:end-1)...
         +nu*(dt/(dx)^2)*(un(2:end-1,3:end)-2*un(2:end-1,2:end-1)+un(2:end-1,1:end-2))...
         +nu*(dt/(dy)^2)*(un(3:end,2:end-1)-2*un(2:end-1,2:end-1)+un(1:end-2,2:end-1));
-    
+        
+    %Boundary conditions:
     u(1,:)=1;
     u(end,:)=1;
     u(:,1)=1;
