@@ -33,7 +33,8 @@ for n=1:nt
                 -(dt/dy)*vn(j,i)*(vn(j,i)-vn(j-1,i))...
                 +nu*(dt/(dx)^2)*(vn(j,i+1)-2*vn(j,i)+vn(j,i-1))...
                 +nu*(dt/(dy)^2)*(vn(j+1,i)-2*vn(j,i)+vn(j-1,i));
-            
+                
+            %Boundary conditions:
             u(1,:)=1;
             u(end,:)=1;
             u(:,1)=1;
