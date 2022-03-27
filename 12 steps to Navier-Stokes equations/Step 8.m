@@ -1,4 +1,5 @@
 %Step 8: Burgers' Equation in 2D
+%A discussion on improving efficiency is presented in Step 6
 clc
 close all
 clear
