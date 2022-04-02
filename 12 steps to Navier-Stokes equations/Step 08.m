@@ -57,7 +57,7 @@ toc
 % For comparing purposes, below I'll put the inefficient code
 % which uses "interloops" instead of "array operations". 
 %
-%Slower Method:
+%SLOWER METHOD:
 %2d Burgers equation
 %clc
 %close all
